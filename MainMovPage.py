@@ -1,6 +1,7 @@
 import MovieClass
 import WorkNicCageTomatoes
 
+#Below we define the ten instances of the Movie class that will be populating our web page.
 goneInSixtySeconds = MovieClass.Movie("Gone in 60 Seconds", "A retired master car thief must come back to the industry and steal 50 cars with his crew in one night to save his brother's life.", 
 	"http://ia.media-imdb.com/images/M/MV5BMTIwMzExNDEwN15BMl5BanBnXkFtZTYwODMxMzg2._V1._SY209_CR1,0,140,209_.jpg", "https://www.youtube.com/watch?v=o6AyAM1buQ8")
 
@@ -30,7 +31,9 @@ badLieutenant = MovieClass.Movie("Bad Lieutenant: Port of Call New Orleans", "Te
 
 nextMovie = MovieClass.Movie("Next", "A Las Vegas magician who can see into the future is pursued by FBI agents seeking to use his abilities to prevent a nuclear terrorist attack.",
 	"http://ia.media-imdb.com/images/M/MV5BMTg3MjgyNjE1Nl5BMl5BanBnXkFtZTcwNTY1NDU0MQ@@._V1._SY209_CR0,0,140,209_.jpg", "https://www.youtube.com/watch?v=rIlka-7WLnQ")
-	
+
+#Here we place the instances of the movie class into an array	
 movieList = [goneInSixtySeconds, theRock, nationalTreasure, faceOff, theFamilyMan, ghostRider, theSorcerersApprentice, lordOfWar, badLieutenant, nextMovie]
 
+#We call the function to generate the web page, feeding in the array of Movie class instances
 WorkNicCageTomatoes.open_movies_page(movieList)
